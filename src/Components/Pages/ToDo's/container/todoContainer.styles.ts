@@ -12,6 +12,11 @@ export const SubTitle = styled.h3 `
     color: #0076D1;
     margin: 3% 0% 5% 0%;
     width: 15rem;
+
+    @media (max-width: 859px) {
+        font-size: 1.2rem; 
+        margin: 2% 0% 3% 0%;
+    }
 `
 
 export const PendingAndCompletedTodosContainer = styled.div `

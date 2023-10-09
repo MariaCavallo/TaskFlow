@@ -9,6 +9,10 @@ export const ToggleButtonContainer = styled.div `
     justify-content: flex-end;
     align-items: center;
     margin: 1%;
+
+    @media (max-width: 859px) {
+        margin: 2%;
+    }
 `
 
 export const ToggleButton = styled.button<ThemeProps>`
@@ -21,5 +25,10 @@ export const ToggleButton = styled.button<ThemeProps>`
     &:hover{
         transform: scale(1.1);
         cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+        padding: 6px 12px;
+        font-size: 16px;
     }
 `;

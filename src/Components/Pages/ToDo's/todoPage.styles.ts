@@ -7,4 +7,9 @@ export const TodosPage = styled.div `
     justify-content: center;
     align-items: center;
     min-height: 32vw;
+
+    @media (max-width: 859px) {
+        min-height: 60vh;
+        padding: 20px;
+    }
 `

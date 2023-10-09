@@ -7,6 +7,10 @@ export const TodoFormContainer = styled.div `
     justify-content: center;
     align-items: center;
     margin: 1%;
+
+    @media (max-width: 859px) {
+        margin: 2%;
+    }
 `
 
 export const Title = styled.h1 `
@@ -14,6 +18,11 @@ export const Title = styled.h1 `
     font-size: 2.5rem;
     text-align: center;
     padding: 2% 0% 10% 0%;
+
+    @media (max-width: 859px) {
+        font-size: 2rem;
+        padding: 5% 0% 8% 0%;
+    }
 `
 
 export const From = styled.form `
@@ -25,6 +34,10 @@ export const From = styled.form `
 
 export const Label = styled.label `
     font-size: larger;
+
+    @media (max-width: 859px) {
+        font-size: 1rem;
+    }
 `
 
 export const BtnInpContainer = styled.div `
@@ -32,6 +45,10 @@ export const BtnInpContainer = styled.div `
     align-items: baseline;
     margin: 2% -11% 0% 0%;
     gap: 5px;
+
+    @media (max-width: 859px) {
+        margin: 2% 0 0 0;
+    }
 `
 
 export const Input = styled.input `
@@ -47,6 +64,12 @@ export const Input = styled.input `
     &:hover {
         background-color: #9fb7d1;
     }
+
+    @media (max-width: 859px) {
+        width: 100%;
+        font-size: 0.9rem;
+        margin: 0% 0% 5%;
+    }
 `
 
 export const Button = styled.button `
@@ -61,5 +84,11 @@ export const Button = styled.button `
     &:hover{
         cursor: pointer;
         transform: scale(1.08);
+    }
+
+    @media (max-width: 859px) {
+        font-size: 1rem; 
+        height: 1.5rem; 
+        width: 1.5rem;     
     }
 `

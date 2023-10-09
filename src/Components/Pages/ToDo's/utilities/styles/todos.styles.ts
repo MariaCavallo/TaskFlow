@@ -12,6 +12,10 @@ export const TodosList = styled.div `
     align-items: center;
     padding: 1%;
     gap: 25px;
+
+    @media (max-width: 859px) {
+        gap: 15px;
+    }
 `
 
 export const TodoContainer = styled.div `
@@ -27,6 +31,12 @@ export const TodoContainer = styled.div `
     flex-direction: row;
     background-color: #eaf1ff;
     color: black;
+
+    @media (max-width: 859px) {
+        width: 100%;
+        font-size: 0.9rem;
+        height: auto;
+    }
 `
 
 export const Span = styled.span `
@@ -34,6 +44,11 @@ export const Span = styled.span `
     font-weight: 500;
     font-style: oblique;
     padding: 1%;
+
+    @media (max-width: 859px) {
+        font-size: 1rem;
+        padding: 2%;
+    }
 `
 
 export const BtnsContainer = styled.div `
@@ -45,6 +60,10 @@ export const BtnsContainer = styled.div `
     justify-content: center;
     gap: 10px;
     padding: 5px;
+
+    @media (max-width: 859px) {
+        gap: 5px;
+    }
 `
 
 export const Buttons = styled.button<IButtons> `
@@ -64,6 +83,12 @@ export const Buttons = styled.button<IButtons> `
         cursor: pointer;
         background-color: ${(props) => (props.$primary ? "green" : "#c23030")};
         color: white;
+    }
+
+    @media (max-width: 859px) {
+        font-size: 1rem;
+        width: 2rem;
+        height: 1.5rem;
     }
 `
 
@@ -92,5 +117,10 @@ export const ButtonClear = styled.button `
         background-color: lightgray;
         color: #000;
         margin: 0% 0% 10% 0%;
+    }
+
+    @media (max-width: 859px) {
+        width: 6rem;
+        font-size: 1rem;
     }
 `

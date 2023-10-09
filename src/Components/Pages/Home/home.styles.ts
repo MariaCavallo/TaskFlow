@@ -4,6 +4,11 @@ export const Description = styled.p `
     margin: 3% 1%;
     font-size: large;
     text-align: center;
+
+    @media (max-width: 859px) {
+        font-size: medium;
+        margin: 2% 0;
+    }
 `
 
 export const ButtonContainer = styled.div `
@@ -13,6 +18,10 @@ export const ButtonContainer = styled.div `
     align-content: center;
     flex-wrap: wrap;
     margin: 3%;
+
+    @media (max-width: 859px) {
+        flex-direction: column;
+    }
 `
 
 export const Button = styled.button `
@@ -27,5 +36,10 @@ export const Button = styled.button `
         color: white;
         transition: background-color 0.3s ease-in-out;
         cursor: pointer;
+    }
+
+    @media (max-width: 859px) {
+        font-size: large;
+        height: 3rem;
     }
 `

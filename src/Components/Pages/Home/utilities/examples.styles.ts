@@ -6,11 +6,19 @@ export const ExamplesContainer = styled.div `
     width: auto;
     border: 2px solid #0E4A8C;
     border-radius: 10px;
+
+    @media (max-width: 859px) {
+        margin: 2% 1%;
+    }
 `
 
 export const TitleExamples = styled.h2 `
     margin: 1%;
     color: #0076D1;
+
+    @media (max-width: 859px) {
+        font-size: 1.5rem;
+    }
 `
 
 export const Section = styled.section `
@@ -20,6 +28,10 @@ export const Section = styled.section `
     margin: 1% 0%;
     align-items: center;
     padding: 1%;
+
+    @media (max-width: 859px) {
+        flex-direction: column;
+    }
 `
 
 export const Card = styled.div `
@@ -30,4 +42,9 @@ export const Card = styled.div `
     padding: 10px;
     font-style: italic;
     color: #000;
+
+    @media (max-width: 859px) {
+        margin: 1% 0;
+        font-size: 0.9rem;
+    }
 `
