@@ -2,15 +2,15 @@
     "routes": [
         {
             "src": "/home",
-            "dest": "/home.tsx"
+            "dest": "/src/Components/Pages/Home/Home.tsx"
         },
         {
             "src": "/todosPage",
-            "dest": "/todosPage.tsx"
+            "dest": "src/Components/Pages/ToDo's/ToDoPage.tsx"
         },
         {
             "src": "/(.*)",
-            "dest": "/main.tsx"
+            "dest": "src/main.tsx"
         }
     ]
 }
