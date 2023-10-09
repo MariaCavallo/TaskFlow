@@ -1,0 +1,16 @@
+{
+    "routes": [
+        {
+            "src": "/home",
+            "dest": "/home.tsx"
+        },
+        {
+            "src": "/todosPage",
+            "dest": "/todosPage.tsx"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/main.tsx"
+        }
+    ]
+}
